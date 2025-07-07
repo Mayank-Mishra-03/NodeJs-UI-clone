@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js - Run JavScript Everywhere</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-DLgCBqQh.css">
+</head>
+
+<body>
+    <div class="mainContainer  font-sans text-[15px]">
+        <div
+            class="sale bg-[#ae5f00] text-white h-[43.9896px] gap-1.5 flex items-center justify-center underline text-[14px] font-sans hover:cursor-pointer">
+            Node.js v18 has reached End-Of-Life on April 30, 2025.
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-[17px] opacity-55" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+            </svg>
+        </div>
+
+        <div class="navBar bg-slate-950 h-[64px] px-[32px] flex items-center">
+            <svg width="80" height="64" viewBox="0 0 267 80" fill="none" aria-label="Node.js logo"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-[#333333] dark:fill-white index-module__YC5Knq__nodejsLogo">
+                <mask id="mask0_1803_3458" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="267" height="80">
+                    <path d="M267 0H0V79.3784H267V0Z" fill="white"></path>
+                </mask>
+                <g mask="url(#mask0_1803_3458)">
+                    <path
+                        d="M234.983 78.7547C234.292 78.7547 233.648 78.5695 233.05 78.2452L226.929 74.5871C226.008 74.0776 226.469 73.8924 226.745 73.7998C227.987 73.3829 228.217 73.2903 229.506 72.5495C229.644 72.4569 229.828 72.5033 229.966 72.5959L234.66 75.4206C234.844 75.5132 235.074 75.5132 235.212 75.4206L253.575 64.7235C253.758 64.6309 253.852 64.4457 253.852 64.2143V42.8665C253.852 42.6351 253.758 42.4499 253.575 42.3573L235.212 31.7067C235.028 31.614 234.798 31.614 234.66 31.7067L216.298 42.3573C216.114 42.4499 216.022 42.6813 216.022 42.8665V64.2143C216.022 64.3995 216.114 64.6309 216.298 64.7235L221.314 67.641C224.029 69.0301 225.732 67.4094 225.732 65.7886V44.7189C225.732 44.4411 225.962 44.1633 226.285 44.1633H228.632C228.908 44.1633 229.184 44.3947 229.184 44.7189V65.7886C229.184 69.447 227.205 71.577 223.753 71.577C222.695 71.577 221.867 71.577 219.519 70.4195L214.687 67.641C213.491 66.9463 212.754 65.6498 212.754 64.2604V42.913C212.754 41.5236 213.491 40.2271 214.687 39.5324L233.05 28.8356C234.2 28.1873 235.765 28.1873 236.915 28.8356L255.278 39.5324C256.474 40.2271 257.21 41.5236 257.21 42.913V64.2604C257.21 65.6498 256.474 66.9463 255.278 67.641L236.915 78.3378C236.363 78.5695 235.673 78.7547 234.983 78.7547Z"
+                        fill="#5FA04E"></path>
+                    <path
+                        d="M240.69 64.075C232.635 64.075 230.978 60.3704 230.978 57.2215C230.978 56.9437 231.208 56.6658 231.53 56.6658H233.923C234.2 56.6658 234.43 56.8511 234.43 57.1289C234.798 59.5831 235.856 60.7873 240.735 60.7873C244.601 60.7873 246.258 59.9074 246.258 57.8236C246.258 56.6197 245.796 55.7398 239.768 55.1377C234.752 54.6282 231.622 53.5169 231.622 49.4881C231.622 45.7374 234.752 43.5145 239.998 43.5145C245.89 43.5145 248.789 45.5521 249.157 49.9976C249.157 50.1366 249.111 50.2754 249.02 50.4144C248.926 50.507 248.789 50.5997 248.649 50.5997H246.21C245.982 50.5997 245.751 50.4144 245.705 50.1828C245.152 47.6359 243.725 46.8025 239.952 46.8025C235.718 46.8025 235.212 48.2842 235.212 49.3955C235.212 50.7384 235.81 51.1553 241.517 51.8962C247.177 52.637 249.847 53.7021 249.847 57.6845C249.847 61.7595 246.487 64.075 240.69 64.075Z"
+                        fill="#5FA04E"></path>
+                    <path
+                        d="M267.2 41.6621C267.2 43.6071 265.588 45.2279 263.654 45.2279C261.722 45.2279 260.111 43.6533 260.111 41.6621C260.111 39.6247 261.768 38.0966 263.654 38.0966C265.542 38.0966 267.2 39.6709 267.2 41.6621ZM260.664 41.6621C260.664 43.3293 261.999 44.6722 263.608 44.6722C265.266 44.6722 266.601 43.2829 266.601 41.6621C266.601 39.9951 265.266 38.6986 263.608 38.6986C262.045 38.6986 260.664 39.9951 260.664 41.6621ZM262.321 39.6709H263.702C264.162 39.6709 265.083 39.6709 265.083 40.736C265.083 41.4769 264.621 41.6159 264.344 41.7085C264.898 41.7547 264.943 42.1254 264.989 42.6346C265.035 42.9588 265.083 43.5145 265.174 43.6997H264.344C264.344 43.5145 264.207 42.4958 264.207 42.4494C264.162 42.218 264.07 42.1254 263.794 42.1254H263.103V43.7459H262.321V39.6709ZM263.057 41.4307H263.654C264.162 41.4307 264.253 41.0603 264.253 40.875C264.253 40.3194 263.885 40.3194 263.654 40.3194H263.012V41.4307H263.057Z"
+                        fill="#5FA04E"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M43.6737 41.9539C43.6737 41.1204 43.2136 40.3334 42.4773 39.9165L23.0104 28.5712C22.6883 28.386 22.3201 28.2934 21.9519 28.2472C21.9059 28.2472 21.7679 28.2472 21.7679 28.2472C21.3997 28.2472 21.0315 28.386 20.7094 28.5712L1.19654 39.8701C0.460209 40.287 0 41.0743 0 41.9539L0.0460209 72.3315C0.0460209 72.7484 0.276126 73.165 0.644293 73.3502C1.01246 73.5819 1.47267 73.5819 1.79482 73.3502L13.3921 66.682C14.1284 66.2653 14.5886 65.4781 14.5886 64.6446V50.4282C14.5886 49.5947 15.0488 48.8074 15.7852 48.3908L20.7094 45.5197C21.0776 45.288 21.4917 45.1954 21.9059 45.1954C22.3201 45.1954 22.7343 45.288 23.0565 45.5197L27.9806 48.3908C28.7169 48.8074 29.1773 49.5947 29.1773 50.4282V64.6446C29.1773 65.4781 29.6375 66.2653 30.3738 66.682L41.8791 73.3502C42.2471 73.5819 42.7073 73.5819 43.0755 73.3502C43.4438 73.165 43.6737 72.7484 43.6737 72.3315V41.9539Z">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M137.465 0.138922C137.096 -0.0463072 136.636 -0.0463072 136.314 0.138922C135.946 0.370456 135.716 0.740915 135.716 1.15768V31.2573C135.716 31.5351 135.578 31.8129 135.301 31.9984C135.025 32.1372 134.749 32.1372 134.473 31.9984L129.595 29.1735C128.859 28.7569 127.984 28.7569 127.248 29.1735L107.735 40.5188C106.999 40.9357 106.539 41.7227 106.539 42.5562V65.2004C106.539 66.0342 106.999 66.8212 107.735 67.2381L127.248 78.5834C127.984 79 128.859 79 129.595 78.5834L149.108 67.2381C149.844 66.8212 150.304 66.0342 150.304 65.2004V8.75207C150.304 7.87222 149.844 7.085 149.108 6.66824L137.465 0.138922ZM135.67 57.7451C135.67 57.9765 135.578 58.1617 135.394 58.2544L128.72 62.1444C128.536 62.237 128.306 62.237 128.122 62.1444L121.449 58.2544C121.265 58.1617 121.173 57.9303 121.173 57.7451V49.9656C121.173 49.7339 121.265 49.5487 121.449 49.4561L128.122 45.5663C128.306 45.4737 128.536 45.4737 128.72 45.5663L135.394 49.4561C135.578 49.5487 135.67 49.7803 135.67 49.9656V57.7451Z">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M202.398 49.7801C203.135 49.3632 203.549 48.5762 203.549 47.7425V42.2319C203.549 41.3985 203.089 40.6112 202.398 40.1946L183.023 28.8957C182.287 28.4788 181.413 28.4788 180.676 28.8957L161.164 40.2407C160.427 40.6576 159.967 41.4449 159.967 42.2784V64.9226C159.967 65.7561 160.427 66.5434 161.164 66.96L180.538 78.0737C181.275 78.4905 182.149 78.4905 182.839 78.0737L194.575 71.4983C194.943 71.3131 195.173 70.8962 195.173 70.4793C195.173 70.0627 194.943 69.6459 194.575 69.4606L174.97 58.1153C174.602 57.8839 174.372 57.5135 174.372 57.0966V50.0117C174.372 49.5949 174.602 49.178 174.97 48.9928L181.091 45.4735C181.459 45.2421 181.919 45.2421 182.287 45.4735L188.408 48.9928C188.776 49.2245 189.006 49.5949 189.006 50.0117V55.5685C189.006 55.9853 189.236 56.4019 189.605 56.5872C189.973 56.8188 190.433 56.8188 190.801 56.5872L202.398 49.7801Z">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M181.551 48.7155C181.689 48.6228 181.874 48.6228 182.012 48.7155L185.739 50.8919C185.877 50.9845 185.969 51.1235 185.969 51.3087V55.6615C185.969 55.8468 185.877 55.9858 185.739 56.0784L182.012 58.2548C181.874 58.3474 181.689 58.3474 181.551 58.2548L177.824 56.0784C177.686 55.9858 177.594 55.8468 177.594 55.6615V51.3087C177.594 51.1235 177.686 50.9845 177.824 50.8919L181.551 48.7155Z"
+                        fill="#5FA04E"></path>
+                    <path
+                        d="M76.3012 28.9882C75.5647 28.5716 74.6903 28.5716 73.954 28.9882L54.5792 40.241C53.8429 40.6578 53.4287 41.4449 53.4287 42.2786V64.83C53.4287 65.6637 53.8889 66.4507 54.5792 66.8676L73.954 78.1203C74.6903 78.5369 75.5647 78.5369 76.3012 78.1203L95.6758 66.8676C96.4123 66.4507 96.8263 65.6637 96.8263 64.83V42.2786C96.8263 41.4449 96.3662 40.6578 95.6758 40.241L76.3012 28.9882Z"
+                        fill="url(#paint0_linear_1803_3458)"></path>
+                    <path
+                        d="M95.7221 40.241L76.2554 28.9882C76.0714 28.8956 75.8412 28.803 75.6572 28.7568L53.8433 66.3119C54.0273 66.5433 54.2575 66.7286 54.4874 66.8676L73.9544 78.1203C74.5067 78.4443 75.1508 78.5369 75.749 78.3517L96.2284 40.6578C96.0904 40.4726 95.9063 40.3336 95.7221 40.241Z"
+                        fill="url(#paint1_linear_1803_3458)"></path>
+                    <path
+                        d="M95.7224 66.8669C96.2747 66.5427 96.6889 65.9871 96.8729 65.385L75.5651 28.7098C75.013 28.6172 74.4146 28.6633 73.9085 28.9876L54.5796 40.1939L75.427 78.4437C75.7031 78.3973 76.0255 78.3046 76.3016 78.1659L95.7224 66.8669Z"
+                        fill="url(#paint2_linear_1803_3458)"></path>
+                </g>
+                <defs>
+                    <linearGradient id="paint0_linear_1803_3458" x1="83.0183" y1="37.3689" x2="65.3246" y2="73.2407"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3F873F"></stop>
+                        <stop offset="0.3296" stop-color="#3F8B3D"></stop>
+                        <stop offset="0.6367" stop-color="#3E9638"></stop>
+                        <stop offset="0.9341" stop-color="#3DA92E"></stop>
+                        <stop offset="1" stop-color="#3DAE2B"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1803_3458" x1="72.1833" y1="56.1876" x2="121.552" y2="19.937"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.1376" stop-color="#3F873F"></stop>
+                        <stop offset="0.4016" stop-color="#52A044"></stop>
+                        <stop offset="0.7129" stop-color="#64B749"></stop>
+                        <stop offset="0.9081" stop-color="#6ABF4B"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1803_3458" x1="52.7188" y1="53.5463" x2="97.551" y2="53.5463"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.0919165" stop-color="#6ABF4B"></stop>
+                        <stop offset="0.2871" stop-color="#64B749"></stop>
+                        <stop offset="0.5984" stop-color="#52A044"></stop>
+                        <stop offset="0.8624" stop-color="#3F873F"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="ml-[30px] font-sans flex justify-between w-[90%]">
+                <div class="first">
+                    <ul class="flex text-white gap-[5px] text-[14px] font-medium items-center h-full">
+                        <li class="hover:bg-[#2c3437] py-[8px] px-[12px] rounded-[3px] hover:cursor-pointer">
+                            <span>Learn</span></li>
+                        <li class="hover:bg-[#2c3437] py-[8px] px-[12px] rounded-[3px] hover:cursor-pointer">
+                            <span>About</span></li>
+                        <li class="hover:bg-[#2c3437] py-[8px] px-[12px] rounded-[3px] hover:cursor-pointer">
+                            <span>Download</span></li>
+                        <li class="hover:bg-[#2c3437] py-[8px] px-[12px] rounded-[3px] hover:cursor-pointer">
+                            <span>Blog</span></li>
+                        <li class="hover:bg-[#2c3437] py-[8px] px-[12px] rounded-[3px] hover:cursor-pointer">
+                            <span>Docs</span></li>
+                        <li
+                            class="flex items-center gap-2 hover:bg-[#2c3437] py-[8px] px-[12px] rounded-[3px] hover:cursor-pointer">
+                            <span>Contribution</span><svg xmlns="http://www.w3.org/2000/svg" class="w-[12px]"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                            </svg></li>
+                        <li
+                            class="flex items-center gap-2 hover:bg-[#2c3437] py-[8px] px-[12px] rounded-[3px] hover:cursor-pointer">
+                            <span>Certification</span><svg xmlns="http://www.w3.org/2000/svg" class="w-[12px]"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                            </svg></li>
+                    </ul>
+                </div>
+                <div class="second flex items-center h-full gap-[30px]">
+                    <div
+                        class="search flex items-center border-gray-700 border-[1px] rounded-[8px] px-[8px] py-[10px] gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="invert" viewBox="0 0 256 256" width="0.8em"
+                            height="1em" fill="currentColor" transform="">
+                            <!--?lit$314183195$-->
+                            <path
+                                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                            </path>
+                        </svg>
+                        <input type="text" class="text-white text-[14px] outline-0 h-full"
+                            placeholder="Start typing..."></input>
+                    </div>
+                    <div class="symbols flex gap-[25px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="invert" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                            class="hidden dark:block" height="20">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="invert" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" height="20">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802">
+                            </path>
+                        </svg>
+                        <svg width="20" height="20" class="invert" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                            <path
+                                d="M10 1.25C5.16562 1.25 1.25 5.16562 1.25 10C1.25 13.8719 3.75469 17.1422 7.23281 18.3016C7.67031 18.3781 7.83437 18.1156 7.83437 17.8859C7.83437 17.6781 7.82344 16.9891 7.82344 16.2563C5.625 16.6609 5.05625 15.7203 4.88125 15.2281C4.78281 14.9766 4.35625 14.2 3.98438 13.9922C3.67812 13.8281 3.24063 13.4234 3.97344 13.4125C4.6625 13.4016 5.15469 14.0469 5.31875 14.3094C6.10625 15.6328 7.36406 15.2609 7.86719 15.0312C7.94375 14.4625 8.17344 14.0797 8.425 13.8609C6.47813 13.6422 4.44375 12.8875 4.44375 9.54062C4.44375 8.58906 4.78281 7.80156 5.34062 7.18906C5.25313 6.97031 4.94687 6.07344 5.42812 4.87031C5.42812 4.87031 6.16094 4.64063 7.83437 5.76719C8.53438 5.57031 9.27813 5.47187 10.0219 5.47187C10.7656 5.47187 11.5094 5.57031 12.2094 5.76719C13.8828 4.62969 14.6156 4.87031 14.6156 4.87031C15.0969 6.07344 14.7906 6.97031 14.7031 7.18906C15.2609 7.80156 15.6 8.57812 15.6 9.54062C15.6 12.8984 13.5547 13.6422 11.6078 13.8609C11.925 14.1344 12.1984 14.6594 12.1984 15.4797C12.1984 16.65 12.1875 17.5906 12.1875 17.8859C12.1875 18.1156 12.3516 18.3891 12.7891 18.3016C14.5261 17.7152 16.0355 16.5988 17.1048 15.1096C18.1741 13.6204 18.7495 11.8333 18.75 10C18.75 5.16562 14.8344 1.25 10 1.25Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="main bg-radial-[at_50%_25%] from-green-900 to-slate-950 to-50% h-[600px] w-full flex items-center justify-center">
+            <div class="content min-h-[85%] w-[82%] flex justify-between">
+                <div class="left w-[41%] p-[8px]">
+                    <div
+                        class="sale flex bg-[#2c3437] items-center p-[4px] gap-2 border-[1px] border-[#2c682c] rounded-full mb-[30px]">
+                        <div
+                            class="btn text-[16px] text-white bg-[#2c682c] px-[10px] py-[2px] rounded-full font-medium">
+                            JSConf</div>
+                        <span class="text-[#99cc7d]">General Admission Tickets are on sale now!</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            aria-hidden="true" data-slot="icon"
+                            class="index-module__5E2ufW__icon text-[#99cc7d] w-[16px] h-[16px]">
+                            <path fill-rule="evenodd"
+                                d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+
+                    <div class="written text-white space-y-[16px] mb-[35px]">
+                        <div class="text-[48px] font-semibold">Run JavaScript Everywhere</div>
+                        <div class="text-[18px]">Node.js® is a free, open-source, cross-platform JavaScript runtime
+                            environment that lets developers create servers, web apps, command line tools and scripts.
+                        </div>
+                    </div>
+
+                    <div
+                        class="download flex text-white text-[18px] items-center justify-center gap-1.5 px-[18px] py-[10px] rounded-[9px] border-[1px] border-green-900 bg-linear-to-l from-slate-900 to-green-900 hover:opacity-75 opacity-100 mb-[13px] cursor-pointer">
+                        <span class="font-semibold">Download Node.js(LTS)</span>
+                        <svg class="h-[20px] w-[20px] text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                            data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9.75v6.75m0 0-3-3m3 3 3-3m-8.25 6a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="info text-[#cbd4d9] flex flex-col items-center">
+                        <span>Downloads Node.js <b>v22.15.01</b> with long-term support.</span>
+                        <div>
+                            <span>Node.js can also be installed via</span>
+                            <span class="text-[#3e9e3e] hover:text-[#3c6a3c] hover:cursor-pointer">version
+                                managers.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right w-[45%] p-[8px]">
+                    <div class="code bg-[#0d121c] min-h-[90%] rounded-[5px] border-[1px] border-gray-600">
+                        <div class="options">
+                            <ul
+                                class="flex text-white font-medium overflow-x-auto whitespace-nowrap w-full gap-5 [&::-webkit-scrollbar]:h-[7px] [&::-webkit-scrollbar-track]:bg-[#2c3437] [&::-webkit-scrollbar-thumb]:bg-gray-300 px-[16px] pt-[12px]">
+                                <li class="px-[4px] pb-[11px] hover:text-[#99cc7d]"><span>Create a HTTP server</span>
+                                </li>
+                                <li class="px-[4px] pb-[11px] hover:text-[#99cc7d]"><span>Write Tests</span></li>
+                                <li class="px-[4px] pb-[11px] hover:text-[#99cc7d]"><span>Read and Hash a file</span>
+                                </li>
+                                <li class="px-[4px] pb-[11px] hover:text-[#99cc7d]"><span>Streams Pipeline</span></li>
+                                <li class="px-[4px] pb-[11px] hover:text-[#99cc7d]"><span>Works with Threads</span></li>
+                            </ul>
+                        </div>
+                        <div class="sourceCode px-[12px] flex flex-col gap-[8px] py-[8px] font-mono">
+                            <span class="line"><span style="color: rgb(129, 161, 193);">import</span><span
+                                    style="color: rgb(236, 239, 244);"> {</span><span
+                                    style="color: rgb(143, 188, 187);"> createServer</span><span
+                                    style="color: rgb(236, 239, 244);"> }</span><span
+                                    style="color: rgb(129, 161, 193);"> from</span><span
+                                    style="color: rgb(236, 239, 244);"> '</span><span
+                                    style="color: rgb(163, 190, 140);">node:http</span><span
+                                    style="color: rgb(236, 239, 244);">'</span><span
+                                    style="color: rgb(129, 161, 193);">;</span></span>
+                            <span class="line"></span>
+                            <span class="line"><span style="color: rgb(129, 161, 193);">const</span><span
+                                    style="color: rgb(216, 222, 233);"> server</span><span
+                                    style="color: rgb(129, 161, 193);"> =</span><span
+                                    style="color: rgb(136, 192, 208);"> createServer</span><span
+                                    style="color: rgb(216, 222, 233);">(</span><span
+                                    style="color: rgb(236, 239, 244);">(</span><span
+                                    style="color: rgb(216, 222, 233);">req</span><span
+                                    style="color: rgb(236, 239, 244);">,</span><span style="color: rgb(216, 222, 233);">
+                                    res</span><span style="color: rgb(236, 239, 244);">)</span><span
+                                    style="color: rgb(129, 161, 193);"> =&gt;</span><span
+                                    style="color: rgb(236, 239, 244);"> {</span></span>
+                            <span class="line"><span style="color: rgb(216, 222, 233);"> res</span><span
+                                    style="color: rgb(236, 239, 244);">.</span><span
+                                    style="color: rgb(136, 192, 208);">writeHead</span><span
+                                    style="color: rgb(216, 222, 233);">(</span><span
+                                    style="color: rgb(180, 142, 173);">200</span><span
+                                    style="color: rgb(236, 239, 244);">,</span><span style="color: rgb(236, 239, 244);">
+                                    {</span><span style="color: rgb(236, 239, 244);"> '</span><span
+                                    style="color: rgb(163, 190, 140);">Content-Type</span><span
+                                    style="color: rgb(236, 239, 244);">'</span><span
+                                    style="color: rgb(236, 239, 244);">:</span><span style="color: rgb(236, 239, 244);">
+                                    '</span><span style="color: rgb(163, 190, 140);">text/plain</span><span
+                                    style="color: rgb(236, 239, 244);">'</span><span style="color: rgb(236, 239, 244);">
+                                    }</span><span style="color: rgb(216, 222, 233);">)</span><span
+                                    style="color: rgb(129, 161, 193);">;</span></span>
+                            <span class="line"><span style="color: rgb(216, 222, 233);"> res</span><span
+                                    style="color: rgb(236, 239, 244);">.</span><span
+                                    style="color: rgb(136, 192, 208);">end</span><span
+                                    style="color: rgb(216, 222, 233);">(</span><span
+                                    style="color: rgb(236, 239, 244);">'</span><span
+                                    style="color: rgb(163, 190, 140);">Hello World!</span><span
+                                    style="color: rgb(235, 203, 139);">\n</span><span
+                                    style="color: rgb(236, 239, 244);">'</span><span
+                                    style="color: rgb(216, 222, 233);">)</span><span
+                                    style="color: rgb(129, 161, 193);">;</span></span>
+                            <span class="line"><span style="color: rgb(236, 239, 244);">}</span><span
+                                    style="color: rgb(216, 222, 233);">)</span><span
+                                    style="color: rgb(129, 161, 193);">;</span></span>
+                            <span class="line"></span>
+                            <span class="line"><span style="color: rgb(112, 126, 153);">// starts a simple http server
+                                    locally on port 3000</span></span>
+                            <span class="line"><span style="color: rgb(216, 222, 233);">server</span><span
+                                    style="color: rgb(236, 239, 244);">.</span><span
+                                    style="color: rgb(136, 192, 208);">listen</span><span
+                                    style="color: rgb(216, 222, 233);">(</span><span
+                                    style="color: rgb(180, 142, 173);">3000</span><span
+                                    style="color: rgb(236, 239, 244);">,</span><span style="color: rgb(236, 239, 244);">
+                                    '</span><span style="color: rgb(163, 190, 140);">127.0.0.1</span><span
+                                    style="color: rgb(236, 239, 244);">'</span><span
+                                    style="color: rgb(236, 239, 244);">,</span><span style="color: rgb(236, 239, 244);">
+                                    ()</span><span style="color: rgb(129, 161, 193);"> =&gt;</span><span
+                                    style="color: rgb(236, 239, 244);"> {</span></span>
+                            <span class="line"><span style="color: rgb(216, 222, 233);"> console</span><span
+                                    style="color: rgb(236, 239, 244);">.</span><span
+                                    style="color: rgb(136, 192, 208);">log</span><span
+                                    style="color: rgb(216, 222, 233);">(</span><span
+                                    style="color: rgb(236, 239, 244);">'</span><span
+                                    style="color: rgb(163, 190, 140);">Listening on 127.0.0.1:3000</span><span
+                                    style="color: rgb(236, 239, 244);">'</span><span
+                                    style="color: rgb(216, 222, 233);">)</span><span
+                                    style="color: rgb(129, 161, 193);">;</span></span>
+                            <span class="line"><span style="color: rgb(236, 239, 244);">}</span><span
+                                    style="color: rgb(216, 222, 233);">)</span><span
+                                    style="color: rgb(129, 161, 193);">;</span></span>
+                            <span class="line"></span>
+                        </div>
+                        <div
+                            class="copyToClipboard flex justify-between items-center text-[white] px-[16px] py-[12px] border-t-[1px] border-gray-600">
+                            <span class="text-gray-200 text-[15px]">JavaScript</span>
+                            <div class="copyBtn flex px-[12px] py-[6px] bg-[#3f474b] hover:bg-[#556066] rounded-[4px] cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                                    class="index-module__5QgK6a__icon h-[20px] w-[20px]">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75">
+                                    </path>
+                                </svg>
+                                <button>Copy to Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info2 my-[16px]">
+                        <span class="text-white">Learn more what Node.js is able to offer with our</span>
+                        <span class="text-[#3e9e3e] hover:text-[#3c6a3c]">Learning materials</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-slate-950 px-[32px] py-[20px] flex justify-between border-t-[1px] border-gray-700">
+            <div class="one">
+                <ul class="text-white flex">
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer">Trademark Policy</li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer">Privacy Policy</li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer">Version Support</li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer">Code of Conduct</li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer">Security Policy</li>
+                </ul>
+            </div>
+            <div class="two">
+                <ul class="text-white flex gap-1">
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer">&copy; OpenJS
+                        Foundation</li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer"><svg width="20"
+                            height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            aria-label="https://github.com/nodejs/node">
+                            <path
+                                d="M10 1.25C5.16562 1.25 1.25 5.16562 1.25 10C1.25 13.8719 3.75469 17.1422 7.23281 18.3016C7.67031 18.3781 7.83437 18.1156 7.83437 17.8859C7.83437 17.6781 7.82344 16.9891 7.82344 16.2563C5.625 16.6609 5.05625 15.7203 4.88125 15.2281C4.78281 14.9766 4.35625 14.2 3.98438 13.9922C3.67812 13.8281 3.24063 13.4234 3.97344 13.4125C4.6625 13.4016 5.15469 14.0469 5.31875 14.3094C6.10625 15.6328 7.36406 15.2609 7.86719 15.0312C7.94375 14.4625 8.17344 14.0797 8.425 13.8609C6.47813 13.6422 4.44375 12.8875 4.44375 9.54062C4.44375 8.58906 4.78281 7.80156 5.34062 7.18906C5.25313 6.97031 4.94687 6.07344 5.42812 4.87031C5.42812 4.87031 6.16094 4.64063 7.83437 5.76719C8.53438 5.57031 9.27813 5.47187 10.0219 5.47187C10.7656 5.47187 11.5094 5.57031 12.2094 5.76719C13.8828 4.62969 14.6156 4.87031 14.6156 4.87031C15.0969 6.07344 14.7906 6.97031 14.7031 7.18906C15.2609 7.80156 15.6 8.57812 15.6 9.54062C15.6 12.8984 13.5547 13.6422 11.6078 13.8609C11.925 14.1344 12.1984 14.6594 12.1984 15.4797C12.1984 16.65 12.1875 17.5906 12.1875 17.8859C12.1875 18.1156 12.3516 18.3891 12.7891 18.3016C14.5261 17.7152 16.0355 16.5988 17.1048 15.1096C18.1741 13.6204 18.7495 11.8333 18.75 10C18.75 5.16562 14.8344 1.25 10 1.25Z">
+                            </path>
+                        </svg></li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer"><svg width="20"
+                            height="20" viewBox="0 -28.5 256 256" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            aria-label="https://nodejs.org/discord">
+                            <path
+                                d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+                                fill="#5865F2" fill-rule="nonzero"></path>
+                        </svg></li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer"><svg width="20"
+                            height="20" viewBox="0 0 75 79" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            aria-label="https://social.lfx.dev/@nodejs">
+                            <path
+                                d="M73.8393 17.4898C72.6973 9.00165 65.2994 2.31235 56.5296 1.01614C55.05 0.797115 49.4441 0 36.4582 0H36.3612C23.3717 0 20.585 0.797115 19.1054 1.01614C10.5798 2.27644 2.79399 8.28712 0.904997 16.8758C-0.00358524 21.1056 -0.100549 25.7949 0.0682394 30.0965C0.308852 36.2651 0.355538 42.423 0.91577 48.5665C1.30307 52.6474 1.97872 56.6957 2.93763 60.6812C4.73325 68.042 12.0019 74.1676 19.1233 76.6666C26.7478 79.2728 34.9474 79.7055 42.8039 77.9162C43.6682 77.7151 44.5217 77.4817 45.3645 77.216C47.275 76.6092 49.5123 75.9305 51.1571 74.7385C51.1797 74.7217 51.1982 74.7001 51.2112 74.6753C51.2243 74.6504 51.2316 74.6229 51.2325 74.5948V68.6416C51.2321 68.6154 51.2259 68.5896 51.2142 68.5661C51.2025 68.5426 51.1858 68.522 51.1651 68.5058C51.1444 68.4896 51.1204 68.4783 51.0948 68.4726C51.0692 68.4669 51.0426 68.467 51.0171 68.4729C45.9835 69.675 40.8254 70.2777 35.6502 70.2682C26.7439 70.2682 24.3486 66.042 23.6626 64.2826C23.1113 62.762 22.7612 61.1759 22.6212 59.5646C22.6197 59.5375 22.6247 59.5105 22.6357 59.4857C22.6466 59.4609 22.6633 59.4391 22.6843 59.422C22.7053 59.4048 22.73 59.3929 22.7565 59.3871C22.783 59.3813 22.8104 59.3818 22.8367 59.3886C27.7864 60.5826 32.8604 61.1853 37.9522 61.1839C39.1768 61.1839 40.3978 61.1839 41.6224 61.1516C46.7435 61.008 52.1411 60.7459 57.1796 59.7621C57.3053 59.7369 57.431 59.7154 57.5387 59.6831C65.4861 58.157 73.0493 53.3672 73.8178 41.2381C73.8465 40.7606 73.9184 36.2364 73.9184 35.7409C73.9219 34.0569 74.4606 23.7949 73.8393 17.4898Z"
+                                fill="url(#paint0_linear_549_34)"></path>
+                            <path
+                                d="M61.2484 27.0263V48.114H52.8916V27.6475C52.8916 23.3388 51.096 21.1413 47.4437 21.1413C43.4287 21.1413 41.4177 23.7409 41.4177 28.8755V40.0782H33.1111V28.8755C33.1111 23.7409 31.0965 21.1413 27.0815 21.1413C23.4507 21.1413 21.6371 23.3388 21.6371 27.6475V48.114H13.2839V27.0263C13.2839 22.7176 14.384 19.2946 16.5843 16.7572C18.8539 14.2258 21.8311 12.926 25.5264 12.926C29.8036 12.926 33.0357 14.5705 35.1905 17.8559L37.2698 21.346L39.3527 17.8559C41.5074 14.5705 44.7395 12.926 49.0095 12.926C52.7013 12.926 55.6784 14.2258 57.9553 16.7572C60.1531 19.2922 61.2508 22.7152 61.2484 27.0263Z"
+                                fill="white"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_549_34" x1="37.0692" y1="0" x2="37.0692" y2="79"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6364FF"></stop>
+                                    <stop offset="1" stop-color="#563ACC"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg></li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer"><svg width="20"
+                            height="20" viewBox="0 0 568 501" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            aria-label="https://bsky.app/profile/nodejs.org">
+                            <path fill="#1185FE"
+                                d="M123.121 33.664C188.241 82.553 258.281 181.68 284 234.873c25.719-53.192 95.759-152.32 160.879-201.21C491.866-1.611 568-28.906 568 57.947c0 17.346-9.945 145.713-15.778 166.555-20.275 72.453-94.155 90.933-159.875 79.748C507.222 323.8 536.444 388.56 473.333 453.32c-119.86 122.992-172.272-30.859-185.702-70.281-2.462-7.227-3.614-10.608-3.631-7.733-.017-2.875-1.169.506-3.631 7.733-13.43 39.422-65.842 193.273-185.702 70.281-63.111-64.76-33.89-129.52 80.986-149.071-65.72 11.185-139.6-7.295-159.875-79.748C9.945 203.659 0 75.291 0 57.946 0-28.906 76.135-1.612 123.121 33.664Z">
+                            </path>
+                        </svg></li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer"><svg width="20"
+                            height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            aria-label="https://twitter.com/nodejs">
+                            <path
+                                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z">
+                            </path>
+                        </svg></li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer"><svg width="20"
+                            height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            aria-label="https://slack-invite.openjsf.org/">
+                            <path fill="#2EB67D"
+                                d="M16.563 9.375A1.562 1.562 0 1 0 15 7.813v1.562h1.563Zm-4.375 0c.862 0 1.562-.7 1.562-1.563V3.438a1.563 1.563 0 0 0-3.125 0v4.374c0 .863.7 1.563 1.563 1.563Z">
+                            </path>
+                            <path fill="#E01E5A"
+                                d="M3.437 10.625A1.562 1.562 0 1 0 5 12.187v-1.562H3.437Zm4.376 0c-.863 0-1.563.7-1.563 1.563v4.374a1.563 1.563 0 0 0 3.125 0v-4.374c0-.863-.7-1.563-1.563-1.563Z">
+                            </path>
+                            <path fill="#ECB22E"
+                                d="M10.625 16.563A1.562 1.562 0 1 0 12.187 15h-1.562v1.563Zm0-4.375c0 .862.7 1.562 1.563 1.562h4.374a1.562 1.562 0 1 0 0-3.125h-4.374c-.863 0-1.563.7-1.563 1.563Z">
+                            </path>
+                            <path fill="#36C5F0"
+                                d="M9.375 3.437A1.562 1.562 0 1 0 7.813 5h1.562V3.437Zm0 4.376c0-.863-.7-1.563-1.563-1.563H3.438a1.563 1.563 0 0 0 0 3.125h4.374c.863 0 1.563-.7 1.563-1.563Z">
+                            </path>
+                        </svg></li>
+                    <li class="px-[12px] py-[8px] hover:bg-[#2c3437] rounded-[3px] cursor-pointer"><svg width="20"
+                            height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            aria-label="https://www.linkedin.com/company/node-js">
+                            <path
+                                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                            </path>
+                        </svg></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
